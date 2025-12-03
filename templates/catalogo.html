@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catálogo - Moda Masculina</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#197fe6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-20 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-gray-900 dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">storefront</span>
+<h2 class="text-xl font-bold tracking-[-0.015em]">MODA</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="#">Clothing</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Shoes</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Accessories</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="hidden sm:flex flex-col relative">
+<div class="flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-gray-500">search</span>
+<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 h-10 placeholder:text-gray-500 dark:placeholder:text-gray-400 pl-10 pr-4 text-sm font-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="relative flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-white text-xs font-bold">3</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 mb-6">
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Home</a>
+<span class="text-gray-400 dark:text-gray-500 text-sm font-medium">/</span>
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Clothing</a>
+<span class="text-gray-400 dark:text-gray-500 text-sm font-medium">/</span>
+<span class="text-gray-800 dark:text-gray-200 text-sm font-medium">Shirts</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+<div class="flex flex-col gap-2">
+<p class="text-gray-900 dark:text-white text-4xl font-black tracking-[-0.033em]">Men's Shirts</p>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal">Explore our latest collection of high-quality men's shirts, from casual wear to formal attire.</p>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Sidebar -->
+<aside class="w-full lg:w-1/4 xl:w-1/5">
+<div class="sticky top-24">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold tracking-[-0.015em]">Filters</h3>
+<button class="text-sm text-primary font-medium hover:underline">Clear All</button>
+</div>
+<div class="flex flex-col space-y-4">
+<!-- Accordions for Filters -->
+<div class="flex flex-col bg-white dark:bg-gray-900/50 rounded-lg border border-gray-200 dark:border-gray-800">
+<details class="flex flex-col py-2 px-4 group border-b border-gray-200 dark:border-gray-800" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-semibold">Category</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="flex flex-col gap-2 pt-2 pb-2">
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">All</a>
+<a class="text-sm font-semibold text-primary" href="#">Shirts</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">T-shirts</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">Pants</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">Jackets</a>
+</div>
+</details>
+<details class="flex flex-col py-2 px-4 group border-b border-gray-200 dark:border-gray-800">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-semibold">Size</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="grid grid-cols-3 gap-2 pt-2 pb-2">
+<button class="text-center text-sm p-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary dark:hover:border-primary">S</button>
+<button class="text-center text-sm p-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary dark:hover:border-primary">M</button>
+<button class="text-center text-sm p-2 rounded-md border border-primary text-primary bg-primary/10 dark:bg-primary/20 dark:border-primary font-semibold">L</button>
+<button class="text-center text-sm p-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary dark:hover:border-primary">XL</button>
+<button class="text-center text-sm p-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary dark:hover:border-primary">XXL</button>
+</div>
+</details>
+<details class="flex flex-col py-2 px-4 group border-b border-gray-200 dark:border-gray-800">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-semibold">Color</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="flex flex-wrap gap-3 pt-2 pb-2">
+<button class="h-6 w-6 rounded-full bg-black border-2 border-white dark:border-gray-800 ring-2 ring-primary"></button>
+<button class="h-6 w-6 rounded-full bg-white border-2 border-gray-300 dark:border-gray-600"></button>
+<button class="h-6 w-6 rounded-full bg-blue-600 border-2 border-white dark:border-gray-800"></button>
+<button class="h-6 w-6 rounded-full bg-green-500 border-2 border-white dark:border-gray-800"></button>
+<button class="h-6 w-6 rounded-full bg-red-500 border-2 border-white dark:border-gray-800"></button>
+<button class="h-6 w-6 rounded-full bg-yellow-400 border-2 border-white dark:border-gray-800"></button>
+</div>
+</details>
+<details class="flex flex-col py-2 px-4 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-semibold">Price</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 pb-2">
+<input class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between text-sm text-gray-500 dark:text-gray-400 mt-2">
+<span>$0</span>
+<span>$500+</span>
+</div>
+</div>
+</details>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-11 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">Apply Filters</button>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="w-full lg:w-3/4 xl:w-4/5">
+<!-- Sorting Dropdown -->
+<div class="flex justify-between items-center mb-6">
+<p class="text-sm text-gray-600 dark:text-gray-400">Showing <span class="font-semibold text-gray-800 dark:text-gray-200">24</span> of <span class="font-semibold text-gray-800 dark:text-gray-200">128</span> results</p>
+<div class="relative">
+<select class="form-select appearance-none block w-full pl-3 pr-10 py-2 text-sm border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-900/50 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50">
+<option>Sort by: Newest</option>
+<option>Sort by: Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A man wearing a classic white button-down shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjvhypO-nM8ZE1E0SFGjpBTCBKvz0LrdrW8lNh8QUQfoEC6xLQCVNzM4BsSOQYFrVRIarMorc5NvqmBPTckOPMD3iCDn5SRmZqwQ1LX_0_W2QvxuPVn7_xJf2nbYpW3x_v41j-smVMJoX3ugcs3B4JziTNelKO-xaancukncyjmak-PL_4ndb-B5avCmwdlyBibXsEr3v-aDbnrigXfwCnci5tKLpg7FkQ5AAK1GnqRRDH3l8aZ0ORME0nv5xX_T5M0Mh02qGqw1e6"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Urban Threads</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Classic Oxford Shirt</p>
+<p class="mt-2 text-lg font-bold text-primary">$79.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A man in a casual navy blue t-shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_iDBYjaFp-RUCW8ne59wb8RPmwQ0D_mmPzoaiezutL6lEqUIAQQARirCXJ2mkxQf7531YyZwY-Mj1gDXLQfaGWm4fJcdohAoFiVYdIYZbuns6rXvfsm3zUde2KKi9_jcSMt_miyHeDlM3KtWiPRuAI_Mg6aoBhTZdOnY1AqkEf6TZVEblCNWssG35nYy-E6J03FRlw4oiuKor2V3L2h4LbyiRiO73QSDVEOBbIBNyxszgjXExnx2wkv50NL6PD1n4ul54GSUWV_1J"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Casual Co.</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Essential Crewneck Tee</p>
+<p class="mt-2 text-lg font-bold text-primary">$25.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A man wearing a stylish striped long-sleeve shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7QWTjIQIPvBzQNUivWjDtsQEfzE69k9SfVgUb36TQPvCPXaqU0aEvhvrQwtSxVAnyDTztoGQO0QsFEICFE6O0ghUn7GAt-2TemL26HNBkurxso1yx5HxIHnOyzdtfCVHk672yR75hzVHHODw6Hf6jCvK8JLT03T1XyhiP48xvT8jdun5eFLjkxk7Adln_DOksaSf6Pa_oFeWAQSmkP4KeEypk8QlRgUkwDM1I3tAsjQNgfLtW_DLcS_ZCK_kGEniYfgzkIrbSg-wK"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Modern Fit</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Striped Long-Sleeve</p>
+<p class="mt-2 text-lg font-bold text-primary">$65.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A plain white t-shirt on a hanger." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC__xieHyrOUSZa9EoTKgWJw_nBuNA5J46h71WwzRYr69ucum3G6gdO8CnDR9gy3Czi8A8_7dT68Oj_nAQGrby77tOoJVomjoejBP8Yzr43Nd8Pwu-Du7LtGr-ieTFV6G7SEJq3uWVL1XniQ7jUFpTmzK_3-2sj4FRKkgAitJL_w_nnfXAwh9EfTuFl5oXRX8q9ErAkonZXMYJLsqCxzY9tLGH7INIltVUYVY6H2Ka5eqOzzklKgEQVCbrKp2XE-IPPRzC-3NzhqMUK"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Basics+</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Premium Cotton Tee</p>
+<p class="mt-2 text-lg font-bold text-primary">$30.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A person wearing a light blue denim shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqNjfhF7PbsaxEGKyPJ9ajdl6p7P_nyVr7H5ETfIK3Z3OxPMPeLCzoGufSJNpWX8qWR7OvYcPDEVQ2aoJRHc-FFifQzuidPjBestgzYZscHNRw6PBKWcRPStAsDildQ3ZQn1iT-cuZ6NXkEOQ4NmDRN8B_XkTGaDqn5aF2_sTWLiydVgxgh5QTfZKPV-LwG_KFXzJqbe6RGFXYBBKdIXQni-olYkFP2o5AB9FTEtjMA9B_Oo_0CgALmtb450MzMAaQp8nsFWi4dB_J"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Denim Works</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Vintage Denim Shirt</p>
+<p class="mt-2 text-lg font-bold text-primary">$89.00</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 transition-shadow hover:shadow-lg dark:hover:shadow-gray-900/50">
+<div class="aspect-w-1 aspect-h-1 bg-gray-100 dark:bg-gray-800">
+<img class="h-full w-full object-cover object-center transition-transform group-hover:scale-105" data-alt="A black short-sleeve button-up shirt with a floral pattern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP9UGn3McImyjWBJW5tDagrow6g7HaLDfvZ2XPpmkAeWwvQqK1RaYcabZQH1ldIH-KDipjoMsVaD9ajWUJjeMtscv-SONh3i98HvqEGm2LDCWrj_xddIM_Ig65kLpZCRgFdGjok3_g4HMs-CWJ9wQuVDpE3KEQlqTqRgbqo7656aHXY98Acco9dJw9F-xptarQ7O_IXgJU4ZDFB0VdmBlTRwCkl5GeZEk56g-WhdszBPzGa5bxJzuX6B3173tVzR-eq2MeP4XG77kC"/>
+</div>
+<div class="flex-1 p-4">
+<h3 class="text-sm text-gray-500 dark:text-gray-400">Summer Vibes</h3>
+<p class="mt-1 text-base font-semibold text-gray-900 dark:text-white">Floral Print Shirt</p>
+<p class="mt-2 text-lg font-bold text-primary">$55.00</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<nav aria-label="Pagination" class="flex items-center justify-center pt-10 mt-8 border-t border-gray-200 dark:border-gray-800">
+<a class="relative inline-flex items-center rounded-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:z-20 focus:outline-offset-0" href="#">
+<span class="sr-only">Previous</span>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</a>
+<a aria-current="page" class="relative z-10 inline-flex items-center bg-primary px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="#">1</a>
+<a class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-200 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:z-20 focus:outline-offset-0" href="#">2</a>
+<a class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-200 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:z-20 focus:outline-offset-0 md:inline-flex" href="#">3</a>
+<span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-700">...</span>
+<a class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-200 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:z-20 focus:outline-offset-0 md:inline-flex" href="#">8</a>
+<a class="relative inline-flex items-center rounded-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:z-20 focus:outline-offset-0" href="#">
+<span class="sr-only">Next</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</body></html>

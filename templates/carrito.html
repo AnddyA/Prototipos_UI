@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Carrito (Resumen)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#197fe6",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111921",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white/90">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="w-full bg-white dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-solid border-slate-200/80 dark:border-slate-800/80">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-4">
+<div class="h-6 w-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-[#111418] dark:text-white">Zenith</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#111418] dark:text-white/90 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">New Arrivals</a>
+<a class="text-[#111418] dark:text-white/90 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Clothing</a>
+<a class="text-[#111418] dark:text-white/90 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Shoes</a>
+<a class="text-[#111418] dark:text-white/90 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Accessories</a>
+<a class="text-[#111418] dark:text-white/90 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Sale</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="hidden md:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-background-light dark:bg-white/10 text-[#111418] dark:text-white/90 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="hidden md:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-background-light dark:bg-white/10 text-[#111418] dark:text-white/90 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">person</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 dark:bg-primary/30 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">2</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+<div class="flex flex-col gap-8">
+<!-- Breadcrumbs & Heading -->
+<div class="space-y-4">
+<div class="flex flex-wrap gap-2">
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal">/</span>
+<span class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Carrito</span>
+</div>
+<div class="flex flex-wrap justify-between gap-3">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Tu Carrito</p>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">Por favor, revisa los artículos antes de finalizar la compra.</p>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+<!-- Left Column: Cart Items -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<h2 class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] border-b border-slate-200 dark:border-slate-800 pb-3">Artículos en el Carrito (2)</h2>
+<div class="flex flex-col divide-y divide-slate-200 dark:divide-slate-800">
+<!-- List Item 1 -->
+<div class="flex gap-4 bg-transparent py-6 justify-between items-center">
+<div class="flex items-start gap-4 flex-grow">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-[80px] w-[80px] flex-shrink-0" data-alt="Grey merino wool sweater on a plain background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByYpzZNpkbB9G8cM-p7z7fcv_AgHbHhqG-5DvY3BVudxfdkwNGrcf-cmTCAI6xdxFn8gKhD8F4sHBA0pp0nssktUAjV1ifww0iRX757fl3m96cIytnUbHLog2SYwHBU-sb_e5QMIRwzoYeYQGDB7pPLegcoxGHv29SGZSGjtDh6IHLfhLsfsz1M1acwEtykqV0zYdl8suqnd_KEpyRkc_GtsMtbVo709RawZYzguWEKQJ92O1Jzb-u3MIy6vevlxv4obAtO3H4ku8f");'></div>
+<div class="flex flex-1 flex-col justify-center gap-1">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Jersey de Lana Merino</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Color: Gris, Talla: L</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal md:hidden">$120.00</p>
+</div>
+</div>
+<div class="flex items-center gap-4 sm:gap-8">
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-[#111418] dark:text-white/90">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-slate-200/60 dark:bg-white/10 hover:bg-slate-300/60 dark:hover:bg-white/20 cursor-pointer">-</button>
+<span class="text-base font-medium leading-normal w-4 p-0 text-center">1</span>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-slate-200/60 dark:bg-white/10 hover:bg-slate-300/60 dark:hover:bg-white/20 cursor-pointer">+</button>
+</div>
+</div>
+<p class="text-slate-800 dark:text-slate-200 text-base font-semibold leading-normal w-20 text-right hidden md:block">$120.00</p>
+<button class="text-slate-500 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-500">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="flex gap-4 bg-transparent py-6 justify-between items-center">
+<div class="flex items-start gap-4 flex-grow">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-[80px] w-[80px] flex-shrink-0" data-alt="Brown leather Chelsea boots" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAohpkZOE9WCggfW7d_XxcdFX56rw472s07Rtal8ljsV74Tn8QBJvQNC6mNgDg92x7J84D1j-wIzYSFOye8MK4Shfp_0q_CkKCw4UXp1QYbBYv-hhLgYDn6Cd5EQPVFQ20CCMpTCxdgIey3aTMhoG_P9A2bQk0e-BIDKTA9GW0CCo_gNO6Dpls9mJWn81ZQkv0EajQMEP_K7L5M_auS3nj3-Mn0rVKKgMei6Av00-97LKTEolpuOvuQu-LBUePG2YkffkwJQOvhnI8A");'></div>
+<div class="flex flex-1 flex-col justify-center gap-1">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Botines Chelsea de Piel</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Color: Marrón, Talla: 43</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal md:hidden">$185.00</p>
+</div>
+</div>
+<div class="flex items-center gap-4 sm:gap-8">
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-[#111418] dark:text-white/90">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-slate-200/60 dark:bg-white/10 hover:bg-slate-300/60 dark:hover:bg-white/20 cursor-pointer">-</button>
+<span class="text-base font-medium leading-normal w-4 p-0 text-center">1</span>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-slate-200/60 dark:bg-white/10 hover:bg-slate-300/60 dark:hover:bg-white/20 cursor-pointer">+</button>
+</div>
+</div>
+<p class="text-slate-800 dark:text-slate-200 text-base font-semibold leading-normal w-20 text-right hidden md:block">$185.00</p>
+<button class="text-slate-500 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-500">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+</div>
+<a class="text-primary text-sm font-semibold leading-normal flex items-center gap-2 hover:underline" href="#">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+                            Seguir Comprando
+                        </a>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-1">
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col gap-6 sticky top-24">
+<h3 class="text-xl font-bold leading-tight tracking-[-0.015em] text-[#111418] dark:text-white">Resumen del Pedido</h3>
+<div class="flex flex-col gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-400">Subtotal</span>
+<span class="font-medium text-[#111418] dark:text-white/90">$305.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-400">Envío</span>
+<span class="font-medium text-[#111418] dark:text-white/90">Gratis</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-400">Impuestos</span>
+<span class="font-medium text-[#111418] dark:text-white/90">$25.16</span>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-[#111418] dark:text-white">Total</span>
+<span class="text-2xl font-black text-[#111418] dark:text-white tracking-tight">$330.16</span>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">Finalizar Compra</button>
+<div class="flex items-center gap-2 py-2">
+<div class="flex-grow h-px bg-slate-200 dark:bg-slate-800"></div>
+<span class="text-xs text-slate-500 dark:text-slate-400">O</span>
+<div class="flex-grow h-px bg-slate-200 dark:bg-slate-800"></div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Introduce un código de descuento:</p>
+<div class="flex gap-2">
+<input class="flex-grow rounded-lg border-slate-300 dark:border-slate-700 bg-background-light dark:bg-white/5 text-sm focus:border-primary focus:ring-primary" placeholder="CÓDIGO PROMO" type="text"/>
+<button class="flex-shrink-0 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-white/90 text-sm font-bold leading-normal tracking-wide hover:bg-slate-300/80 dark:hover:bg-white/20 transition-colors">Aplicar</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-base">lock</span>
+<p class="text-xs font-medium">Pago Seguro y Protegido</p>
+</div>
+<div class="flex gap-3 text-2xl text-slate-400 dark:text-slate-500">
+<!-- Using placeholder images for payment methods for simplicity -->
+<img class="h-5" data-alt="Visa logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSHKSegHdihR5DRDE5binGJ6yTtg52CQw_IRrTURaon5bnXdf2eZkxSsakZSiuqG049DcQkwyaQxi1wLdu3i2zNihxI7zVU9QoNG4RUggK0T3bSxyKDYB8z625nfiY__e-USfMicHz9n0e8-X1WjTLOHD6-V4lUp9vVtRv0NKkc-BQJnAPrb4wSYW7oeR3AYz-wLIx1cNHO49GI4y2j1i-5WHRRgbrdbOb0-bdhViQ8xCpoegeQU-fH4AHB3nNpRihi2UHixwPfD4"/>
+<img class="h-5" data-alt="Mastercard logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrlm2eODCq7Wu9yi04Ag1BcbIUu3pPRep1Nk9Xe4pCEQtZoWgJUJzZ2FBT6vqSlOQ21JxPAyP0hAnO5w9b956oBusHHf8aQwBZb7KTGmbC63DmKSrg6BPZEmKayU8R7pkbJ8mV2R1MF-txXBiypW249GP5yzGtJWS5U0RHTG15Shg_CBYBk609iw7N_N6OR8jzZNhUz9_peazvNYRg6vtR5MBNGPrQSOvmp93mfgH5gNloj02VImW3jeHxl5Tp2IWn4IEGlAyymxfM"/>
+<img class="h-5" data-alt="PayPal logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuk4gTYqyvaaKH0k4jBNYxA9pcoEx2YfNijWAyW9l9oBbJSQVNdVz9n9lBbF8dFG-hEzZYURYNL30RzmGMrwxk4c6xNaiZAZQX8l41a0AhctYqmepzn1VCRVnlLivViDnnWJga3Le7vD6NtQCbc4tD3nhbnxOOiKfvbPzCGeQY-4_3YdLUIyGd-U9LraI45WymuMrfhexCmh6uOd0Bqis3WfZWaxmz3uErnv1KTdmndhe82SfgkxoQtORwWVL8cdfq-8UM1Ooa06Ck"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 mt-16">
+<div class="container mx-auto px-4 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+<p>© 2024 Zenith Fashion. Todos los derechos reservados.</p>
+<div class="mt-2 space-x-4">
+<a class="hover:text-primary" href="#">Política de Privacidad</a>
+<a class="hover:text-primary" href="#">Términos de Servicio</a>
+<a class="hover:text-primary" href="#">Contacto</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

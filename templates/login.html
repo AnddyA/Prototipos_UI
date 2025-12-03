@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login (Acceso)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#111921",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111921",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .social-button-icon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden dark:bg-background-dark">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1">
+<div class="flex w-full min-h-screen">
+<div class="hidden lg:flex lg:w-1/2 bg-center bg-no-repeat bg-cover" data-alt="A stylishly dressed man in a modern urban setting, looking away from the camera with a confident expression." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlqeY8bcU9i1QHXKtqZOS-i3Rb08A6LM0tshCfPQWvXNo0L8yeGh18TBYUoOvYeaPvrN842WnMibVzOoKslJKK8apWFUMpolvyZZ3hT0OrmitfTs-cK2iwC2Dt-NHUaSBGj0u1u9WkqVRNK3IsRj_suRszB7-lmscWCIIJIVkgiQ062uIX-qmftZoRCRFFfNPCd8dG3nn1eFWaDkKRQ-UWEWkqYGfNkZaZeywJoC8z7EVAIgxTaMjRUVHuCoX4XIFWMjC4_L70YqIi");'></div>
+<div class="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-background-light dark:bg-background-dark">
+<div class="layout-content-container flex flex-col w-full max-w-md">
+<header class="mb-10 text-center lg:text-left">
+<h1 class="text-primary dark:text-white text-2xl font-bold tracking-tight">BRAND.</h1>
+</header>
+<div class="flex flex-col gap-2 mb-8">
+<p class="text-primary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Welcome Back</p>
+<p class="text-[#637588] dark:text-gray-400 text-base font-normal leading-normal">Log in to your account / Acceso a tu cuenta</p>
+</div>
+<div class="flex flex-col gap-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-primary dark:text-gray-300 text-base font-medium leading-normal pb-2">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 border border-[#dce0e5] dark:border-gray-600 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal" placeholder="Enter your email address" type="email" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<div class="flex justify-between items-center pb-2">
+<p class="text-primary dark:text-gray-300 text-base font-medium leading-normal">Password</p>
+<a class="text-primary/80 dark:text-white/80 text-sm font-medium leading-normal hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 border border-[#dce0e5] dark:border-gray-600 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+</div>
+</label>
+</div>
+<button class="flex items-center justify-center font-bold text-base leading-normal px-6 h-14 rounded-lg bg-primary text-white dark:bg-white dark:text-primary mt-8 w-full hover:opacity-90 transition-opacity">Log In (Acceso)</button>
+<div class="flex items-center gap-4 my-8">
+<hr class="flex-grow border-t border-gray-300 dark:border-gray-600"/>
+<p class="text-[#637588] dark:text-gray-400 text-sm font-normal">OR</p>
+<hr class="flex-grow border-t border-gray-300 dark:border-gray-600"/>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex items-center justify-center gap-3 w-full h-14 rounded-lg border border-[#dce0e5] dark:border-gray-600 bg-white dark:bg-gray-800 text-primary dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="Google logo" class="social-button-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGwQMDD5gAay-17gzmlqv-Uc3B6ETSWXM4hq_m7G7bmlh1BMkzy60mexK-H9PyheoCYwRDRqMwDOPDpdeDgxyF5A7GbbOae8X95P5n3wmenFMDQS-IWU2rbgLs6yG-aO-aKRIbbWAmmXfkX7hla5DxLf6F3EyK_9fXcEyv5DEcf10JO_lG5z6fedFEevheK_k5cx0Vwz781BTgrkY7naVo80bVHxPyMKswAziF1r1nw23nbApmn_YGIhiXV8cu4BoFM-tJmV33ZAGd"/>Continue with Google
+                                </button>
+<button class="flex items-center justify-center gap-3 w-full h-14 rounded-lg border border-[#dce0e5] dark:border-gray-600 bg-white dark:bg-gray-800 text-primary dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="Facebook logo" class="social-button-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbX2YqBZjq0ePe3l68lUtet93KmI8nU2Dyu9JVaFKvMjPseOM1SJjzD-SRUALjRr3ZFdtN_qzoWsTX2MwZOpB6yFQoFS56ehI-8hbkljGSoNQJXFsOigHsJ3luTi9Ebogwn3JeXozkJqxpCnrPBHdi6EWpqkka_cjpf0IlaewsGMiqpPaG9im_NYc4SPnysP4zWmkc1z_07uVqbW-NiONjQouwp5YAPnamx7cYkzYqeoMXKiQFAtseB-5MHZtisPWLLOD1zZo4xtXZ"/>Continue with Facebook
+                                </button>
+</div>
+<p class="text-center text-[#637588] dark:text-gray-400 text-base font-normal leading-normal mt-8">
+                                Don't have an account? <a class="font-bold text-primary dark:text-white hover:underline" href="#">Sign Up</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inicio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#197fe6",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111921",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="w-full bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-6 md:px-10 py-3 mx-auto max-w-7xl">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">ECHO</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Clothing</a>
+<a class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Shoes</a>
+<a class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Accessories</a>
+<a class="text-red-500 dark:text-red-400 text-sm font-medium leading-normal hover:text-red-600 dark:hover:text-red-500 transition-colors" href="#">Sale</a>
+</nav>
+</div>
+<div class="flex items-center justify-end gap-2 md:gap-4">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-gray-100 dark:bg-gray-800 items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary focus:ring-inset border-none bg-gray-100 dark:bg-gray-800 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-2xl">person</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col flex-1">
+<div class="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<!-- HeroSection -->
+<div class="@container mb-8 md:mb-16">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[480px] md:min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center" data-alt="Model wearing a modern fall jacket in an urban setting" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjUxDcYeWatzIJSApwaAbAbEMPpMCdzXLdBpINubntaylL0ZKDoXKDFQJhudadAcqAzSztIxiF0b-K6krLf0VINMfo5lDv8ooLcf9J8HUmEf8-3kfPuCR-4F5ypVed1nBTBAOF9qwRO3SjUGo3hEMoYdVPKh5l-v5NB6O2_Ax8FF2M-EYtClUzzmGH7B4OsEL4uWM1bagXF4VDIS57Wm7yk9Kzc6iL651JhEBuIVwMvByZw96Ldz8HtqINdDNj8EJhT6AM1nBRld7B");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">The Fall '24 Collection Has Arrived</h1>
+<h2 class="text-white text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal max-w-xl mx-auto">Discover timeless styles and premium quality, crafted for the modern man.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Shop New Arrivals</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SectionHeader for Categories -->
+<h2 class="text-gray-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">Shop By Category</h2>
+<!-- ImageGrid for Categories -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 p-4">
+<a class="group" href="#">
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Close-up of a neatly folded stack of men's shirts" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqbxJjEF4KO6prVoJWHKq_iWW-sjok7z1NG-e8nxNzJo0wiMEgA5hiFsZoPsY9ANiFTmROeh9TZ9TT3QVgmg4QJWEL-sFKnaa2i-510s49Jb9p2zG-DzfBGGJXfcu5MZ53LB6Ppkgk2sDqkuB0b0mF2Mg9Zm_C9yJv8H6B3qr5UsQnzhFhHN_DIu5-d_ubUQrlWWG8WYZpOVXAWkkQP5xV6OOrbN75i8SsIb7WF8-8M4SuXoNyOkQTHn48To7s-K2idtBiZ13Pnnmc");'>
+<p class="text-white text-lg font-bold leading-tight line-clamp-3">Shirts</p>
+</div>
+</a>
+<a class="group" href="#">
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Well-fitted men's trousers on a mannequin" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxJRJESYfFKYTwxhRkUrufGL7GF4L9fTn5ogPZbOyd8-K1m8HKWAlvqWwpsW1V6VYn1qRK992DmIYNRyDnLiOXZIJUgl9nlb35EeJ-8aavK55VoKRdAX8Q7tCEnPtOQTikMyhP0XI3yDHxlKL-sNTxwMl_JBiL0L7Dqu5EVhIWiidATMFkdu-MNw-fw_xhuZbMfFdtzAh7lU1Mnfzjbsvt6FqwDd1myuLd30x6u5OA2TbINJFobo4XVMkowZUywqaXTjB6cQGK5rQK");'>
+<p class="text-white text-lg font-bold leading-tight line-clamp-3">Pants</p>
+</div>
+</a>
+<a class="group" href="#">
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="A collection of men's fashion accessories including a watch and belt" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7NAGopPRgx9XAUIlryJ4-Q80o1QKaMDXuN41I-V32Pv65oBXwyT_GmHe1fS-v3FI2GWD3k40Ifb7J0kfISPcuNbYqq86xLLWzDnyhkdoD-dow6sOicZP-vS39jRHyZpel7Dh7RlujhWMYHec_i_I5P9SbJ8DgjOEsFf8dVsq4c7OIryNeeyhm-qC8bNqAbfJEMe4f3aNfJu7UoUl31alkr7r-X-PGpY7Fpbk7Y3PkAFBQaZkbkOnS0oK_njbQikEo-Sh-L2hQqoaA");'>
+<p class="text-white text-lg font-bold leading-tight line-clamp-3">Accessories</p>
+</div>
+</a>
+<a class="group" href="#">
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Stylish leather boots for men" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTZ_uYhBaJlaz7Ct86_N2L4hGJp8l4Hpmo5cBHCrTzbGqEVQ_A2FpVmGYWeQwIfEhSdIBekAGdJkb2t0bXbBGODJj_4BlsnSQY7uCOu4VWddQdEDo7SGIET7Z0ED6RAcZx5LLyd_DytX_H4E2eLRQHwivgYsLcDqyEsiZ4T2oz6pl7Ulq5OVDyIuFKhtVxDn24jbgA-j6Uu4znPvnEODE62rmdbrDeAlsmfSolltE_no8c4qOA92t54moQizzTk5HibTANKcSTMSnn");'>
+<p class="text-white text-lg font-bold leading-tight line-clamp-3">Footwear</p>
+</div>
+</a>
+</div>
+<!-- SectionHeader for Trending Products -->
+<h2 class="text-gray-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-10">Trending Now</h2>
+<!-- Products Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+<!-- Product Card 1 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-auto object-cover aspect-[3/4] transition-transform duration-300 group-hover:scale-105" data-alt="Man wearing a minimalist white t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJlgtD8I27CRrHs8Mw_OAdle2f8ecEwMTgIC3pbkBTF5H73AlNcQRyB6vyuYnoog92LpSVt3ZfUlTT18wgKO6L8-RsBaKMAVGB7UWmEQM9cxmK6ESRCnRT75lk72DV5ExjMjZQwqb_YPnk1o0OTWxM59DSTHlEghtAfnC_s_KUTHeI3bJOa2zggT6lNgLPHY3Dr-Xpfd4ObolFb3l38Oq7Qd_jY0Y_-bdh2fBDTmpzU1vx7sSY4T-e0ft1wMp-Z4b7Z2OQ58pVszM2"/>
+<button class="absolute bottom-3 right-3 flex items-center justify-center size-10 bg-white dark:bg-gray-800 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">Classic Crewneck Tee</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Essential Collection</p>
+<p class="text-base font-bold text-gray-900 dark:text-white mt-1">$45.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-auto object-cover aspect-[3/4] transition-transform duration-300 group-hover:scale-105" data-alt="Man wearing modern tapered chino pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsKrH_rYd8hcbPBvVR4L-LzAR2jN1diGy2NIHKnWM__n4d0makSHjznMx-7GrbuCM4dYWQ_A377WvOO9niLMuRGWkY1t5axgW2QmM7NS7_V8p1NZ7D0PxBVrDbE6obwL0qaIkjy-4WQ3JURoAwQxAPmHNszAEHZzNcqmz3tvWUYs8bgx9z8x50dWWFBWUcRhYtyouTA6g0QKXstu-MlY4RCCggow5v_-7IkNjDCfvcQ9dN-CLX-ORkB1bE_FTQvgJk64apbiBv4RqR"/>
+<button class="absolute bottom-3 right-3 flex items-center justify-center size-10 bg-white dark:bg-gray-800 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">Modern Tapered Chino</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Trousers</p>
+<p class="text-base font-bold text-gray-900 dark:text-white mt-1">$89.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-auto object-cover aspect-[3/4] transition-transform duration-300 group-hover:scale-105" data-alt="Man wearing a stylish blue denim jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtQ95LzNsA-TfQ3tqpXouoW5KA10tyjYxg6cGTiLMtIkEX9_sifbWQ97e56zqYPaGN24950j6YwzdoyH63HXQNuof28RICrKoyzhhoGGExhcdeNykWYJjKiT-WqUoJmXbPmjdxEZjwgVd1PlyS1YbELwDQmjNjQScaQo9avMjPL2zY_vqxc0L4mBja6V46gS7Z_oGagG49qiihNVGbnk-eFt1pkdnoOE4cY9SqPQYnedwHwYIpQKSszrhJ3-joVZS4AzGnhRElUTdA"/>
+<button class="absolute bottom-3 right-3 flex items-center justify-center size-10 bg-white dark:bg-gray-800 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">Denim Trucker Jacket</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Outerwear</p>
+<p class="text-base font-bold text-gray-900 dark:text-white mt-1">$125.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-auto object-cover aspect-[3/4] transition-transform duration-300 group-hover:scale-105" data-alt="Clean white leather sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZgARceqWVFw8x5lWMnBT5OBP7p34srlvIbXyIPHDFnQj6cK6x6HJis-TlI245xxzNEN0yV0XZBqF1G4G9uhLRTYis-sSSNQj-xiKbUXG1D8EZ-WxR5eWS3HjnsGVyrgU9vHY2fkVuc5jn4diOd58mXhUSGX3HdkITs-4986_aw-cxHiy6l3A9Mgk5VghY43MRPl-rDMLp0yq2THLCgwATKW0Z1qdnzNTqWM6Ql0Oyg2SC9iFROKigacndq1GiQufuNmxJhkciwzYf"/>
+<button class="absolute bottom-3 right-3 flex items-center justify-center size-10 bg-white dark:bg-gray-800 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">Minimalist Leather Sneaker</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Footwear</p>
+<p class="text-base font-bold text-gray-900 dark:text-white mt-1">$150.00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

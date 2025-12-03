@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalle de Producto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#333333",
+                        "accent": "#FFBF00",
+                        "background-light": "#F8F8F8",
+                        "background-dark": "#1A2A4C",
+                        "text-light": "#333333",
+                        "text-dark": "#F8F8F8",
+                        "subtle-light": "#666666",
+                        "subtle-dark": "#bbbbbb"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-text-light/10 dark:border-text-dark/10">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap h-20">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+<h2 class="text-xl font-bold tracking-[-0.015em]">MODA HOMBRE</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">New Arrivals</a>
+<a class="text-sm font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Clothing</a>
+<a class="text-sm font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Shoes</a>
+<a class="text-sm font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Accessories</a>
+<a class="text-sm font-medium text-accent" href="#">Sale</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-text-light/5 dark:bg-text-dark/5 hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-text-light/5 dark:bg-text-dark/5 hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-text-light/5 dark:bg-text-dark/5 hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA10e4ZSn3aug0Xp0Lz_nXn-6ijzuYZplUuA7gAe05HutoHjKUJxvRmpOXJAcfdUixG4zxvq-Iryl4pKp_pMMc4bMT4HRgbIsdazqNy2XPxJsBRWZMFrtvh_qro7VUuM7UAKvcTZYc9amu_TU__WW6UAx14BRdu7LSZW3_AICoT6gkNpsy2wyfIlGQ4nwQCQw45jAi0axhm4srOmQiuGqTQPgCtWVd7-fACVW4NVwvMgA0ul7lcoYWE1ogaFcs9TL2RzHP_YOmzyajf");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 py-8">
+<div class="layout-content-container flex flex-col gap-8">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2">
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Home</a>
+<span class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal">/</span>
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Clothing</a>
+<span class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal">/</span>
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Shirts</a>
+<span class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal">/</span>
+<span class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">The Oxford Shirt</span>
+</div>
+<!-- Product Details Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Image Gallery -->
+<div class="flex flex-col gap-4">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl aspect-[4/5]" data-alt="Front view of the Oxford Shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqvfW7O_IjcM_N8w2SQVwsdZcx1d4_L-1HSI9mo4m-MWFkIFS7fer-rrCIUnuRGe8h0EGNJpCPj609lBNDHYBxxa107V4DgTS8iP1Ww8e93LbWPCxZWFOeuSxa3TtHQOQnV_GqJ0Yo0FR2TKFRP0Y06VkUuHFAIKN_Fw10oIVPAO6MyHEyTaqqODOAKhWJ13MBuQh2BSFU4r2ySODfOFGGpqK7ZCPD1n5pTR3RGrZrdLJPXI96fm3z6TjtXipKKvj1VMH5xdzlk-tt");'></div>
+<div class="grid grid-cols-4 gap-4">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-lg aspect-square cursor-pointer border-2 border-primary" data-alt="Front view thumbnail of the Oxford Shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_FeyTe7Ss9uIfIBHrFelCqjgqxnYhlJihlCbxu9aMKiZKNuBWRk3N-Cx9PfTtvMORu6klCZK3j0VporoKBrogRCQ21Fvq6eyRXvjEIijkqHq3zoseJytmcRZCrjLIk75QSOXwM08d8SkM1cv1K9AQTImQgU2dLrQ7SahANgXayaAB8UIqnvuPjLWWS-4Ew1EQDFUNKzdxrnkwdZX6b2dyTsDEkHuIHI-oRYWVquwGxoLzGAMykml9U9JKEmQhcM--kcn6k7FiJz0J");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-lg aspect-square cursor-pointer opacity-70 hover:opacity-100 transition-opacity" data-alt="Back view thumbnail of the Oxford Shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvyTF9uiOqqTCWgiFkk3s3TO84QEE6QxKeh57tUuvTW5Sh0Sk6iwjL_QSvYUlQXSqjM2cD7R1Qp9l5jLrBwWUEhGyf3f0Hg5Egbp4i4iK4Ygn2QnEPima_zsozx6a0O6iNJuYG60vIeAnBvqCb2ah5X7OFajGV7Uc99J9tMW4JQnDJnHOC2JmUOI_fOb2GtXP9EvkHuj1Yb5XxSE1zEabf14-ltke1h6jqxJBBu2WcvOdYcz-5ezgsfYFf1n1bwuKROnEP8iAL4K-h");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-lg aspect-square cursor-pointer opacity-70 hover:opacity-100 transition-opacity" data-alt="Detail shot thumbnail of the Oxford Shirt fabric" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZWcyDItrfcTn3N06zrP7BeV5fiK6S_E4dcxWH2OvStn1r5kimLtDCiweu7m1hXVxm51RrYcIhj1as0Vr7aNHYR6tA8ageK5dU7MG9CXglIKSlMDJWORBE4kVmlX7KfRhAKpNRvS5w-wsBhx62Sfylv0iIqpAw-hLPD2D4UwQ83johVB2DCh90NDpSoeLMk7hCfG4Fi8JX64wcr6SFWZYk8fa2UAyhp1aQnSE-gvaITyt_lc1AOYY-gF8kkS73aXOkzNM1TKmIBpI2");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-lg aspect-square cursor-pointer opacity-70 hover:opacity-100 transition-opacity" data-alt="Oxford shirt worn by a model" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7z6yuwGiXxsJlEaeFB-W7_BI4i9oggCjWXsCG_cJbV_X0fb6VTnbX4sy3V95DDwm91WQNXHjI6lZ0qRRm2DZ_CjFi4Cdm5C5xqsvHe37rxpmpA_pBGb46Gkp6tmL85APANMqZAw0XlLTMOSjhkEDTzylmeHMTud7jG7SWFrxypwrLh3BRTRkXAwxQJDlich4ijMB6P8i6-JEyswrwhO5lUYUhrQZG-zt5E9qgmLOXKX5-gV9JsB8ZTrPk9HssP-siDUf1zKHDiu-_");'></div>
+</div>
+</div>
+<!-- Product Information -->
+<div class="flex flex-col gap-6 pt-4">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em]">The Oxford Shirt</h1>
+<p class="text-2xl font-normal text-subtle-light dark:text-subtle-dark">$78.00</p>
+</div>
+<p class="text-base font-normal leading-relaxed">A timeless staple for any wardrobe, this classic Oxford shirt is crafted from premium, breathable cotton for all-day comfort and a sharp, tailored fit.</p>
+<!-- Size Selector -->
+<div class="flex flex-col gap-3">
+<label class="text-sm font-bold">Size</label>
+<div class="flex flex-wrap gap-2">
+<button class="h-10 px-4 rounded-lg bg-text-light/5 dark:bg-text-dark/5 text-sm font-semibold hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">S</button>
+<button class="h-10 px-4 rounded-lg bg-primary text-white text-sm font-semibold">M</button>
+<button class="h-10 px-4 rounded-lg bg-text-light/5 dark:bg-text-dark/5 text-sm font-semibold hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">L</button>
+<button class="h-10 px-4 rounded-lg bg-text-light/5 dark:bg-text-dark/5 text-sm font-semibold hover:bg-text-light/10 dark:hover:bg-text-dark/10 transition-colors">XL</button>
+<button class="h-10 px-4 rounded-lg bg-text-light/5 dark:bg-text-dark/5 text-sm font-semibold text-subtle-light dark:text-subtle-dark cursor-not-allowed opacity-50 relative overflow-hidden">
+                                    XXL
+                                    <span class="absolute top-1/2 left-0 w-full h-px bg-subtle-light dark:bg-subtle-dark transform -rotate-12"></span>
+</button>
+</div>
+</div>
+<!-- Quantity & CTA -->
+<div class="flex items-center gap-4">
+<div class="flex items-center border border-text-light/20 dark:border-text-dark/20 rounded-lg">
+<button class="h-12 w-12 flex items-center justify-center text-subtle-light dark:text-subtle-dark hover:bg-text-light/5 dark:hover:bg-text-dark/5 transition-colors rounded-l-lg">-</button>
+<input class="h-12 w-12 text-center bg-transparent border-0 text-text-light dark:text-text-dark p-0 focus:ring-0" readonly="" type="text" value="1"/>
+<button class="h-12 w-12 flex items-center justify-center text-subtle-light dark:text-subtle-dark hover:bg-text-light/5 dark:hover:bg-text-dark/5 transition-colors rounded-r-lg">+</button>
+</div>
+<button class="flex-1 flex max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-accent text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:brightness-95 transition-all">
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tabs Section -->
+<div class="border-t border-text-light/10 dark:border-text-dark/10 pt-12 mt-8">
+<div class="flex border-b border-text-light/10 dark:border-text-dark/10">
+<button class="px-4 py-3 text-sm font-semibold border-b-2 border-primary">Product Details</button>
+<button class="px-4 py-3 text-sm font-semibold text-subtle-light dark:text-subtle-dark border-b-2 border-transparent hover:border-text-light/20 dark:hover:border-text-dark/20 transition-colors">Sizing Guide</button>
+<button class="px-4 py-3 text-sm font-semibold text-subtle-light dark:text-subtle-dark border-b-2 border-transparent hover:border-text-light/20 dark:hover:border-text-dark/20 transition-colors">Shipping &amp; Returns</button>
+</div>
+<div class="py-6 text-base leading-relaxed space-y-4">
+<p>Crafted from 100% premium long-staple cotton, our Oxford Shirt offers a perfect blend of comfort and durability. The classic button-down collar, single chest pocket, and mother-of-pearl buttons provide a timeless look that transitions effortlessly from the office to the weekend.</p>
+<ul class="list-disc list-inside space-y-2">
+<li>Material: 100% Cotton</li>
+<li>Fit: Tailored Fit</li>
+<li>Care: Machine wash cold, tumble dry low</li>
+</ul>
+</div>
+</div>
+<!-- Customer Reviews Section -->
+<div class="border-t border-text-light/10 dark:border-text-dark/10 pt-12">
+<h2 class="text-2xl font-bold mb-6">Customer Reviews</h2>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="flex flex-col items-center gap-2 p-6 rounded-xl bg-text-light/5 dark:bg-text-dark/5">
+<p class="text-5xl font-black">4.8</p>
+<div class="flex text-accent">
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Based on 125 reviews</p>
+</div>
+<div class="flex-1 w-full space-y-6">
+<div class="flex flex-col gap-3 pb-6 border-b border-text-light/10 dark:border-text-dark/10">
+<div class="flex justify-between">
+<p class="font-bold">Alex Thompson</p>
+<div class="flex text-accent">
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-subtle-light dark:text-subtle-dark leading-relaxed">The quality is outstanding. Fits perfectly and feels great. Will definitely buy in more colors. Highly recommend!</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between">
+<p class="font-bold">Ben Carter</p>
+<div class="flex text-accent">
+<span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined !text-[16px]">star</span>
+</div>
+</div>
+<p class="text-subtle-light dark:text-subtle-dark leading-relaxed">Great shirt, but it's a bit snug in the shoulders for me. I would suggest sizing up if you're between sizes.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Products Section -->
+<div class="border-t border-text-light/10 dark:border-text-dark/10 pt-12">
+<h2 class="text-2xl font-bold mb-6">You Might Also Like</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl aspect-[4/5] group-hover:opacity-90 transition-opacity" data-alt="Chino Pants" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCag16lwwqVoRymAN1nP-R4mga59WcvZfMyDSdYxQB-WdmMzGJnDabFbLtn2j-K7an65QsDZWwZCIPt0MqP2AbpVhEZzjUyYjOPeU7X9Ea0ov_d0yhI4EGy1wN3TQ3xgCxL0VEwwn3-4UCR5F92tsSR0w5NLp2OxaCw7z1HvKjQGQZ63vX7fFar9QMCS-i-5WxYnM3444QVQ7jdUgk3MqJ8bgCubK0yAZAJC_ZhXa33xIu44-zi_Cl04OSY8Omi85fFVHySOGafrfoV");'></div>
+<div class="flex flex-col">
+<h3 class="font-bold">Classic Chino Pants</h3>
+<p class="text-subtle-light dark:text-subtle-dark">$85.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl aspect-[4/5] group-hover:opacity-90 transition-opacity" data-alt="Leather Belt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdcyRa9nySDgW_2PoQfICI9Sl9b9sa5LDwUhVf-qBJDSuyCmCO4mVLiqXdljmP9hEsjd_zUI_Ad-sD31ifkIdDYpLlvHQ7d-PtVIW0w5c3kPnl5cd1OrJHyvepVipseYaYJVLon9Bop4bqjmwvvJ_rppxnYjDNjCBpaW9LmKAicNx7UhW_VejA4FZRFUgORflEMsUydLB9NFHzju8xk3rS5hZtWWMIcBQgy8b_sbeqEW_EejmTDCTTBohMwDiHjkgJ50fY2kW4XkKq");'></div>
+<div class="flex flex-col">
+<h3 class="font-bold">Leather Belt</h3>
+<p class="text-subtle-light dark:text-subtle-dark">$45.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl aspect-[4/5] group-hover:opacity-90 transition-opacity" data-alt="Wool Sweater" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwBl-V9tHEaQgX3_wMWbRF_7L4fPmNLMeaX3JztLfkthbJd96_IR3Al2bqQC3QT12xXbOgBTzNPvAad8XUHPqi2tRw8oOY_ba0EDmqjTzd2H1fb1AmhoqXNRcb6BY4Bx9ndjo2L8eemCk6Bys0QRfxxNfBACEZMAVPerZgmqneCh02a-wF6mDiRhiP0HzJFTpAdZ2e80UxDumaakkmUZweBniPyv_xf83mYlgjvewL2AoOIn3si6_4pWEvUbcJnajzV9FpNDaflgTR");'></div>
+<div class="flex flex-col">
+<h3 class="font-bold">Merino Wool Sweater</h3>
+<p class="text-subtle-light dark:text-subtle-dark">$120.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl aspect-[4/5] group-hover:opacity-90 transition-opacity" data-alt="Suede Loafers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLE6wVlo5xgOtK4ZUOSPGlfMUf_XhZfT69gBq3AE-p_bd7CxByp5Q9BfvH5rZ3EwCgcHB_iGiICCACZPb8Njgp-_Ema9-oNXnrqf_IrjjW3JqlSjLW13yf-kUIO5_iUP1Dx47J6QpVzI9GUvHe-gotRLRGxeHm6Q1N4sCoZB11D9ZQ9NJXtgLYku_Q0HAGDme4Zu9PRODiIDX-_dMTwDiMdkE4cAm_FfdxgPp55UdGhBPtyhP0CXWj4FqvC1_-llGcCaGpZa8QDejD");'></div>
+<div class="flex flex-col">
+<h3 class="font-bold">Suede Loafers</h3>
+<p class="text-subtle-light dark:text-subtle-dark">$150.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
